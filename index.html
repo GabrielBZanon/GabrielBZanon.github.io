@@ -3,160 +3,849 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabriel Barbosa Zanon | Desenvolvedor Full-Stack</title>
+    <title>Gabriel Zanon | Full-Stack Developer</title>
+    <meta name="description" content="Desenvolvedor Full-Stack especializado em Java, Spring Boot, React. Transformando código em soluções.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/GabrielBZanon/pfe1-projeto-lanchonete-delivery-2025/main/screenshot.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
+<body class="dark-mode">
+    <!-- Terminal Window -->
+    <div class="terminal-window">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="close"></span>
+                <span class="minimize"></span>
+                <span class="maximize"></span>
+            </div>
+            <div class="terminal-title">portfolio.sh --user=gabriel_zanon</div>
+        </div>
+        <div class="terminal-body">
+            <div class="terminal-line">
+                <span class="prompt">gabriel@portfolio:~$</span> 
+                <span class="command">whoami</span>
+            </div>
+            <div class="terminal-line output">
+                Gabriel Barbosa Zanon | Full-Stack Developer
+            </div>
+            <div class="terminal-line">
+                <span class="prompt">gabriel@portfolio:~$</span> 
+                <span class="command">cat skills.txt</span>
+            </div>
+            <div class="terminal-line output">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Docker</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botão WhatsApp Fixo -->
+    <a href="https://wa.me/5519996577884" class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Navegação -->
+    <header class="glass-nav">
         <div class="container">
             <nav>
-                <a href="#" class="logo">Gabriel <span>Barbosa Zanon</span></a>
-                <ul class="nav-links">
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                <a href="#" class="logo">
+                    <span class="code-symbol">&lt;/&gt;</span>
+                    <span class="logo-text">GZ<span class="logo-cursor">_</span></span>
+                </a>
+                <div class="nav-toggle" id="navToggle">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="nav-link"><span class="nav-number">01.</span> Início</a></li>
+                    <li><a href="#about" class="nav-link"><span class="nav-number">02.</span> Sobre</a></li>
+                    <li><a href="#skills" class="nav-link"><span class="nav-number">03.</span> Stack</a></li>
+                    <li><a href="#projects" class="nav-link"><span class="nav-number">04.</span> Projetos</a></li>
+                    <li><a href="#contact" class="nav-link"><span class="nav-number">05.</span> Contato</a></li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/gabriel-barbosa-zanon-137049313" class="btn-nav" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </li>
                 </ul>
+                <div class="theme-toggle">
+                    <input type="checkbox" id="themeSwitch">
+                    <label for="themeSwitch">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <span class="toggle-ball"></span>
+                    </label>
+                </div>
             </nav>
         </div>
     </header>
-    
-    <section class="hero">
+
+    <!-- Seção Hero -->
+    <section class="hero" id="home">
         <div class="container">
-            <div class="hero-content">
-                <h1>Olá, eu sou <span>Gabriel Barbosa Zanon</span></h1>
-                <p>Desenvolvedor Full-Stack especializado em Java, Spring Boot e React. Transformo ideias em soluções digitais completas e eficientes.</p>
-                <a href="#projects" class="btn">Ver Projetos</a>
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-icon"><i class="fas fa-terminal"></i></span>
+                        <span class="badge-text">Disponível para oportunidades</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="line-1">Hello World,</span>
+                        <span class="line-2">I'm <span class="text-gradient">Gabriel Zanon</span></span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        <span class="typing-text">Full-Stack Developer</span>
+                        <span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        Especializado em <span class="highlight">Java</span>, <span class="highlight">Spring Boot</span> e <span class="highlight">React</span>. 
+                        Construindo sistemas escaláveis e interfaces intuitivas. 
+                        Transformo problemas complexos em código limpo e eficiente.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn-primary">
+                            <i class="fas fa-code"></i>
+                            <span>Ver Projetos</span>
+                            <div class="btn-hover-effect"></div>
+                        </a>
+                        <a href="https://github.com/GabrielBZanon" class="btn-secondary" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="#contact" class="btn-outline">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Contato</span>
+                        </a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/GabrielBZanon" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                            <span class="social-tooltip">GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/gabriel-barbosa-zanon-137049313" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                            <span class="social-tooltip">LinkedIn</span>
+                        </a>
+                        <a href="https://www.instagram.com/zgabrielbarbosa" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span class="social-tooltip">Instagram</span>
+                        </a>
+                        <a href="mailto:barbosa.zanon10@gmail.com" class="social-link" title="Email">
+                            <i class="fas fa-envelope"></i>
+                            <span class="social-tooltip">Email</span>
+                        </a>
+                        <a href="https://wa.me/5519996577884" target="_blank" rel="noopener noreferrer" class="social-link" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span class="social-tooltip">WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="code-title">main.java</div>
+                        </div>
+                        <div class="code-content">
+                            <pre><code>public class Developer {
+    private String name = "Gabriel Zanon";
+    private String role = "Full-Stack Developer";
+    private String[] stack = {
+        "Java", "Spring Boot", 
+        "React", "TypeScript",
+        "PostgreSQL", "Docker"
+    };
+    
+    public Project buildProject(Requirement req) {
+        return new Project.Builder()
+            .withBackend("Java/Spring Boot")
+            .withFrontend("React/TypeScript")
+            .withDatabase("PostgreSQL")
+            .withDeployment("Docker")
+            .build();
+    }
+    
+    public static void main(String[] args) {
+        Developer dev = new Developer();
+        dev.startCoding();
+    }
+}</code></pre>
+                        </div>
+                    </div>
+                    <div class="floating-tech">
+                        <div class="tech-icon java">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <div class="tech-icon spring">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="tech-icon react">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="tech-icon database">
+                            <i class="fas fa-database"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    
-    <section class="skills" id="skills">
+
+    <!-- Sobre -->
+    <section class="about section-padding" id="about">
         <div class="container">
-            <div class="section-title">
-                <h2>Minhas Habilidades</h2>
-                <p>Tecnologias e ferramentas que domino e utilizo em meus projetos</p>
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-number">02.</span>
+                    <span class="section-text">Sobre Mim</span>
+                    <span class="section-line"></span>
+                </h2>
+                <p class="section-subtitle">Conheça o desenvolvedor por trás do código</p>
             </div>
-            
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <h3>Banco de Dados</h3>
-                    <p>MySQL, PostgreSQL, MongoDB, modelagem de dados e otimização de queries SQL.</p>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Full-Stack Developer</h3>
+                    <p>Desenvolvo soluções completas, do back-end ao front-end, garantindo performance e usabilidade.</p>
                 </div>
-                
-                <div class="skill-card">
-                    <i class="fas fa-server"></i>
-                    <h3>Back-end</h3>
-                    <p>Java, Spring Boot, Node.js, construção de APIs RESTful e microsserviços.</p>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Análise e Desenvolvimento</h3>
+                    <p>Formado em ADS com foco em boas práticas, arquitetura de software e padrões de projeto.</p>
                 </div>
-                
-                <div class="skill-card">
-                    <i class="fas fa-code"></i>
-                    <h3>Front-end</h3>
-                    <p>React, JavaScript, TypeScript, HTML5, CSS3 e desenvolvimento de interfaces responsivas.</p>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Focado em Resultados</h3>
+                    <p>Entrego soluções que resolvem problemas reais, com código limpo e documentação clara.</p>
                 </div>
-                
-                <div class="skill-card">
-                    <i class="fas fa-cloud"></i>
-                    <h3>Cloud & DevOps</h3>
-                    <p>AWS, Docker, CI/CD, deploy de aplicações e configuração de ambientes.</p>
-                </div>
-                
-                <div class="skill-card">
-                    <i class="fas fa-mobile"></i>
-                    <h3>Mobile</h3>
-                    <p>React Native para desenvolvimento de aplicativos multiplataforma.</p>
-                </div>
-                
-                <div class="skill-card">
-                    <i class="fas fa-cogs"></i>
-                    <h3>Ferramentas</h3>
-                    <p>Git, GitHub, Postman, Figma, metodologias ágeis e Scrum.</p>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Olá! Sou um desenvolvedor apaixonado por tecnologia desde os 16 anos. Minha jornada começou com Python e evoluiu para o ecossistema Java/Spring no back-end e React no front-end.</p>
+                        <p>Atualmente, meu foco está em <strong>desenvolvimento Full-Stack</strong>, criando sistemas robustos com arquiteturas escaláveis. Meu TCC é um sistema completo que integra todas as tecnologias que domino.</p>
+                        <p>Acredito que código bom é código limpo, testável e bem documentado. Sempre busco aprender novas tecnologias e melhorar minhas habilidades.</p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <div class="stat-number">15+</div>
+                                <div class="stat-label">Projetos</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">10000+</div>
+                                <div class="stat-label">Linhas de Código</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">24/7</div>
+                                <div class="stat-label">Disponível</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <div class="image-content">
+                                <i class="fab fa-instagram"></i>
+                                <span>@zgabrielbarbosa</span>
+                            </div>
+                            <div class="image-glow"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <section class="projects" id="projects">
+
+    <!-- Stack Tecnológica -->
+    <section class="skills section-padding" id="skills">
         <div class="container">
-            <div class="section-title">
-                <h2>Meus Projetos</h2>
-                <p>Alguns dos projetos que desenvolvi e que demonstram minhas habilidades</p>
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-number">03.</span>
+                    <span class="section-text">Tech Stack</span>
+                    <span class="section-line"></span>
+                </h2>
+                <p class="section-subtitle">Tecnologias que utilizo no dia a dia</p>
             </div>
-            
+            <div class="skills-tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="backend">Back-End</button>
+                    <button class="tab-btn" data-tab="frontend">Front-End</button>
+                    <button class="tab-btn" data-tab="tools">Ferramentas</button>
+                    <button class="tab-btn" data-tab="mobile">Mobile</button>
+                </div>
+                <div class="tabs-content">
+                    <div class="tab-pane active" id="backend">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon java">
+                                    <i class="fab fa-java"></i>
+                                </div>
+                                <h4>Java</h4>
+                                <p>Linguagem principal para desenvolvimento back-end</p>
+                                <div class="skill-level">
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot"></span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon spring">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <h4>Spring Boot</h4>
+                                <p>Framework para criação de APIs REST e microsserviços</p>
+                                <div class="skill-level">
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot"></span>
+                                    <span class="level-dot"></span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon node">
+                                    <i class="fab fa-node-js"></i>
+                                </div>
+                                <h4>Node.js</h4>
+                                <p>Runtime JavaScript para back-end</p>
+                                <div class="skill-level">
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot"></span>
+                                    <span class="level-dot"></span>
+                                    <span class="level-dot"></span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon database">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <h4>PostgreSQL/MySQL</h4>
+                                <p>Bancos de dados relacionais</p>
+                                <div class="skill-level">
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="frontend">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon react">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <h4>React</h4>
+                                <p>Biblioteca para interfaces de usuário</p>
+                                <div class="skill-level">
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot"></span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon typescript">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <h4>TypeScript</h4>
+                                <p>JavaScript com tipagem estática</p>
+                                <div class="skill-level">
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot"></span>
+                                    <span class="level-dot"></span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon html">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <h4>HTML5 & CSS3</h4>
+                                <p>Estrutura e estilo da web</p>
+                                <div class="skill-level">
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon tailwind">
+                                    <i class="fas fa-wind"></i>
+                                </div>
+                                <h4>Tailwind CSS</h4>
+                                <p>Framework CSS utility-first</p>
+                                <div class="skill-level">
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot"></span>
+                                    <span class="level-dot"></span>
+                                    <span class="level-dot"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section class="projects section-padding" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-number">04.</span>
+                    <span class="section-text">Projetos em Destaque</span>
+                    <span class="section-line"></span>
+                </h2>
+                <p class="section-subtitle">Soluções reais com código real</p>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+                <button class="filter-btn" data-filter="backend">Back-End</button>
+                <button class="filter-btn" data-filter="frontend">Front-End</button>
+                <button class="filter-btn" data-filter="tcc">TCC</button>
+            </div>
             <div class="projects-grid">
-                <!-- Projeto Destaque - Lanchonete Delivery -->
-                <div class="project-card featured-project">
-                    <div class="project-img">
-                        <img src="https://raw.githubusercontent.com/GabrielBZanon/pfe1-projeto-lanchonete-delivery-2025/main/screenshot.png" alt="Lanchonete Delivery" onerror="this.src='https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80'">
-                        <div class="featured-badge">Destaque</div>
+                <!-- TCC - Projeto Principal -->
+                <div class="project-card tcc featured" data-category="tcc,fullstack">
+                    <div class="project-header">
+                        <div class="project-badge">
+                            <i class="fas fa-star"></i> TCC - Projeto Completo
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" title="Código">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="TCC Full-Stack">
+                        <div class="project-overlay">
+                            <h3>Sistema Full-Stack Completo</h3>
+                            <p>Meu trabalho de conclusão de curso - Sistema empresarial completo com todas as camadas</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Sistema de Gerenciamento Empresarial</h3>
+                        <p>Sistema completo desenvolvido como TCC, incluindo módulos de autenticação, cadastro, relatórios, dashboard e API RESTful.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lanchonete Delivery -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-header">
+                        <div class="project-badge">
+                            <i class="fas fa-shopping-cart"></i> Delivery
+                        </div>
+                        <div class="project-links">
+                            <a href="https://gabrielbzanon.github.io/pfe1-projeto-lanchonete-delivery-2025/" class="project-link" title="Demo" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/GabrielBZanon/pfe1-projeto-lanchonete-delivery-2025" class="project-link" title="Código" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1374&q=80" alt="Lanchonete Delivery">
+                        <div class="project-overlay">
+                            <h3>Lanchonete Delivery</h3>
+                            <p>Sistema completo de delivery com painel administrativo</p>
+                        </div>
                     </div>
                     <div class="project-content">
                         <h3>Lanchonete Delivery</h3>
-                        <p>Sistema completo de delivery com cardápio digital, carrinho de compras e integração com pagamentos. Desenvolvido com React e Spring Boot.</p>
-                        <div class="project-links">
-                            <a href="https://gabrielbzanon.github.io/pfe1-projeto-lanchonete-delivery-2025/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Demo</a>
-                            <a href="https://github.com/GabrielBZanon/pfe1-projeto-lanchonete-delivery-2025" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Código</a>
+                        <p>Sistema de delivery completo com cardápio digital, carrinho de compras, autenticação e painel administrativo.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">API REST</span>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Projeto 2 - Sistema de Cadastro -->
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://raw.githubusercontent.com/GabrielBZanon/Cadastro-de-clientes/main/screenshot.png" alt="Sistema de Cadastro" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'">
+
+                <!-- Sistema de Cadastro -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-header">
+                        <div class="project-badge">
+                            <i class="fas fa-users"></i> CRUD
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/GabrielBZanon/Cadastro-de-clientes" class="project-link" title="Código" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Sistema de Cadastro">
+                        <div class="project-overlay">
+                            <h3>Sistema de Cadastro</h3>
+                            <p>CRUD completo com React e Spring Boot</p>
+                        </div>
                     </div>
                     <div class="project-content">
-                        <h3>Sistema de Cadastro</h3>
-                        <p>Aplicação completa para gerenciamento de clientes com front-end em React e back-end em Java/Spring Boot.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/GabrielBZanon/Cadastro-de-clientes" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Código</a>
+                        <h3>Sistema de Cadastro de Clientes</h3>
+                        <p>Aplicação completa para gerenciamento de clientes com operações CRUD, validação e interface responsiva.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">CRUD</span>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Projeto 3 - API de Tarefas -->
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://raw.githubusercontent.com/GabrielBZanon/API-gerenciador-de-tarefas/main/screenshot.png" alt="API de Tarefas" onerror="this.src='https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'">
+
+                <!-- API de Tarefas -->
+                <div class="project-card" data-category="backend">
+                    <div class="project-header">
+                        <div class="project-badge">
+                            <i class="fas fa-tasks"></i> API
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/GabrielBZanon/API-gerenciador-de-tarefas" class="project-link" title="Código" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="API de Tarefas">
+                        <div class="project-overlay">
+                            <h3>API de Tarefas</h3>
+                            <p>API RESTful com autenticação JWT</p>
+                        </div>
                     </div>
                     <div class="project-content">
                         <h3>API Gerenciadora de Tarefas</h3>
-                        <p>API RESTful desenvolvida com Java e Spring Boot para gerenciamento de tarefas com autenticação JWT.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/GabrielBZanon/API-gerenciador-de-tarefas" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Código</a>
+                        <p>API RESTful com autenticação JWT, autorização por roles, CRUD completo de tarefas e documentação Swagger.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">JWT</span>
+                            <span class="tech-tag">PostgreSQL</span>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="more-projects">
+                <a href="https://github.com/GabrielBZanon" class="btn-outline" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i> Ver Todos os Projetos no GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-number">05.</span>
+                    <span class="section-text">Vamos Conversar</span>
+                    <span class="section-line"></span>
+                </h2>
+                <p class="section-subtitle">Entre em contato pelas minhas redes sociais</p>
+            </div>
+            
+            <div class="contact-cards">
+                <div class="contact-card instagram">
+                    <div class="contact-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Instagram</h3>
+                    <a href="https://www.instagram.com/zgabrielbarbosa" target="_blank" class="contact-link">
+                        @zgabrielbarbosa
+                    </a>
+                    <p>Siga para ver meu dia a dia como dev</p>
+                </div>
+                
+                <div class="contact-card whatsapp">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <a href="https://wa.me/5519996577884" target="_blank" class="contact-link">
+                        (19) 99657-7884
+                    </a>
+                    <p>Resposta rápida para oportunidades</p>
+                </div>
+                
+                <div class="contact-card email">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <a href="mailto:barbosa.zanon10@gmail.com" class="contact-link">
+                        barbosa.zanon10@gmail.com
+                    </a>
+                    <p>Para propostas formais e projetos</p>
+                </div>
+                
+                <div class="contact-card linkedin">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/gabriel-barbosa-zanon-137049313" target="_blank" class="contact-link">
+                        Gabriel Barbosa Zanon
+                    </a>
+                    <p>Conecte-se profissionalmente</p>
+                </div>
+            </div>
+            
+            <div class="contact-instagram-highlight">
+                <div class="instagram-content">
+                    <div class="instagram-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="instagram-text">
+                        <h3>Siga meu Instagram!</h3>
+                        <a href="https://www.instagram.com/zgabrielbarbosa" class="btn-primary" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            <span>Seguir no Instagram</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <footer id="contact">
+
+    <!-- Footer -->
+    <footer>
         <div class="container">
             <div class="footer-content">
-                <h2>Vamos trabalhar juntos?</h2>
-                <p>Estou disponível para oportunidades como desenvolvedor Full-Stack. Entre em contato para conversarmos!</p>
-                <a href="mailto:barbosa.zanon10@gmail.com" class="btn">Enviar Mensagem</a>
-                
-                <div class="social-links">
-                    <a href="https://github.com/GabrielBZanon" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <div class="footer-logo">
+                    <span class="code-symbol">&lt;/&gt;</span>
+                    <span class="logo-text">GZ<span class="logo-cursor">_</span></span>
                 </div>
-                
-                <div class="copyright">
-                    <p>&copy; <span id="current-year"></span> Gabriel B. Zanon. Todos os direitos reservados.</p>
+                <p class="footer-tagline">Transformando linhas de código em soluções reais</p>
+                <div class="footer-social">
+                    <a href="https://github.com/GabrielBZanon" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/gabriel-barbosa-zanon-137049313" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/zgabrielbarbosa" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:barbosa.zanon10@gmail.com" class="social-icon">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://wa.me/5519996577884" target="_blank" class="social-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                <div class="footer-nav">
+                    <a href="#home">Início</a>
+                    <a href="#about">Sobre</a>
+                    <a href="#skills">Stack</a>
+                    <a href="#projects">Projetos</a>
+                    <a href="#contact">Contato</a>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; <span id="currentYear"></span> Gabriel Barbosa Zanon. Todos os direitos reservados.</p>
+                    <p>Desenvolvido com <i class="fas fa-heart"></i> e <i class="fas fa-code"></i></p>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- JavaScript -->
     <script>
-        // Atualiza o ano automaticamente
-        document.getElementById('current-year').textContent = new Date().getFullYear();
+        document.addEventListener('DOMContentLoaded', function() {
+            // Ano atual
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+            // Menu responsivo
+            const navToggle = document.getElementById('navToggle');
+            const navLinks = document.getElementById('navLinks');
+            
+            navToggle.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                navToggle.classList.toggle('active');
+            });
+
+            // Scroll suave
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Efeito de digitação
+            const typingText = document.querySelector('.typing-text');
+            const texts = [
+                'Full-Stack Developer',
+                'Java Specialist',
+                'Spring Boot Expert',
+                'React Developer',
+                'Problem Solver'
+            ];
+            let textIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+
+            function type() {
+                const currentText = texts[textIndex];
+                
+                if (isDeleting) {
+                    typingText.textContent = currentText.substring(0, charIndex - 1);
+                    charIndex--;
+                } else {
+                    typingText.textContent = currentText.substring(0, charIndex + 1);
+                    charIndex++;
+                }
+
+                if (!isDeleting && charIndex === currentText.length) {
+                    isDeleting = true;
+                    setTimeout(type, 1500);
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    textIndex = (textIndex + 1) % texts.length;
+                    setTimeout(type, 500);
+                } else {
+                    setTimeout(type, isDeleting ? 50 : 100);
+                }
+            }
+
+            if (typingText) {
+                setTimeout(type, 1000);
+            }
+
+            // Filtro de projetos
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remover active de todos
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Adicionar ao clicado
+                    this.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    
+                    projectCards.forEach(card => {
+                        const categories = card.getAttribute('data-category');
+                        
+                        if (filter === 'all' || categories.includes(filter)) {
+                            card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            }, 10);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+
+            // Tabs de skills
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            const tabPanes = document.querySelectorAll('.tab-pane');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+                    
+                    // Remover active de todos
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    tabPanes.forEach(pane => pane.classList.remove('active'));
+                    
+                    // Adicionar active
+                    this.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+
+            // Tema dark/light
+            const themeSwitch = document.getElementById('themeSwitch');
+            if (themeSwitch) {
+                themeSwitch.addEventListener('change', function() {
+                    document.body.classList.toggle('dark-mode');
+                    document.body.classList.toggle('light-mode');
+                });
+            }
+
+            // Animação de scroll
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('header');
+                if (window.scrollY > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+                
+                // Animar elementos ao scroll
+                const animateElements = document.querySelectorAll('.skill-item, .project-card, .about-card');
+                animateElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementTop < windowHeight - 100) {
+                        element.classList.add('animated');
+                    }
+                });
+            });
+
+            // Inicializar animações
+            window.dispatchEvent(new Event('scroll'));
+        });
     </script>
 </body>
 </html>
